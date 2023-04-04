@@ -1,10 +1,11 @@
 FREE_WARNING = 'Free shipping only applies to single customer orders'
 BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
 NONE_SELECTED = 0
-var location = 'RSA' || 'NAM'
+let location = 'RSA' || 'NAM'
 var shipping = 'shipping'
 var currency = 'R' || 'N$'
-customers = null
+customers = 1
+shiping = null
 
 
 
