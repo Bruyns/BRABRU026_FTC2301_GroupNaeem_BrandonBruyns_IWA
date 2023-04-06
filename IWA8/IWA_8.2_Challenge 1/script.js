@@ -15,7 +15,7 @@ const sarahPostal = '0310'
 
 const leo = {
 	userName : leoName,
-	userBalance : (-parseFloat(leoBalance)).toFixed(2),
+	userBalance : "R" + (-parseFloat(leoBalance)).toFixed(2),
 	accessId : '[47afb389-8014-4d0b-aff3-e40203d2107f]',
 	userAge : 24,
 	address :  {
@@ -27,7 +27,7 @@ const leo = {
 
 const sarah = {
 	userName : sarahName.trimEnd(),
-    balance : (-parseInt(sarahBalance)).toFixed(2),
+    balance :  "R" + (-parseInt(sarahBalance)).toFixed(2),
 	accessId : '[6b279ae5-5657-4240-80e9-23f6b635f7a8]',
     userAge : 62,
 	address : {
