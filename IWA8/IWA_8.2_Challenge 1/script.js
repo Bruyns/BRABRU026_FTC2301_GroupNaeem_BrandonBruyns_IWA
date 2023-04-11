@@ -16,7 +16,7 @@ const sarahPostal = '0310'
 const leo = {
 	userName : leoName,
 	userBalance : "R" + (-parseFloat(leoBalance)).toFixed(2),
-	accessId : '[47afb389-8014-4d0b-aff3-e40203d2107f]',
+	accessId : '47afb389-8014-4d0b-aff3-e40203d2107f',
 	userAge : 24,
 	address :  {
 		number : leoNumber,
@@ -36,5 +36,5 @@ const sarah = {
 		postalCode : sarahPostal,
 	}
 }
-console.log(leo, leo['address']['postal-code'])
-console.log(sarah, sarah['address']['postal-code'])
+console.log(leo, leo.address.postalCode)
+console.log(sarah, sarah['address']['postalCode'])
