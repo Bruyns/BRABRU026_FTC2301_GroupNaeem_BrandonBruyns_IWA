@@ -182,3 +182,11 @@ console.log('{lastDay}/{lastMonth}/{currentYear}')
 const randomHoliday = holidays[Math.random]
 console.log(randomHoliday.date)
 ```
+
+## what should the code do and how will i change it
+* the 1st console log was using 
+``` js 
+console.log( holiday.name.futureId)
+``` 
+where futureId was not nested in the object and was returning undefined. i removed name since we want it to check futureId first then if it wasnt in the object return a string message
+* setting the new name for 'christmas' to 'x-mas' using copied. is copied a class/ function?
