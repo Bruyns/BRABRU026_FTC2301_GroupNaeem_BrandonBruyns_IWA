@@ -169,3 +169,12 @@ const 3-status: document(status)
 3-pancakes = 3-root.pancakes,
 3-status = 3-root.status ? Delivered : Pending
 ```
+
+### what was the issues
+* what was initially wrong with the code
+* what steps did i take to correct it
+* are their other ways to reach the same conclusion
+* what "topics" did the challenge cover
+
+### answers to above questions
+* 
