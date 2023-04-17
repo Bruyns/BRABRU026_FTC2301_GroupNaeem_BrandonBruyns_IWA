@@ -31,9 +31,9 @@ status : document.querySelector(data-delivered===[true]) ? Delivered : Pending,
 }
 
 order3 = {
-biscuits : 3-root.biscuits,
-donuts : 3-root.donuts,
-pancakes : 3-root.pancakes,
+biscuits : count.biscuits,
+donuts : count.donuts,
+pancakes : count.pancakes,
 status : document.querySelector(data-delivered===[true]) ? Delivered : Pending,
 }
 console.log(order2)
