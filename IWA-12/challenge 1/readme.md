@@ -123,3 +123,20 @@ reserve.2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
 checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
 checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
 ```
+
+## issues picked up by chatgpt
+* Some specific issues with the code include:
+
+* The selector function is not defined, so it is unclear what this function does or how it works.
+* The status variable is being assigned a value from an unknown source, so it is unclear what data type or value it contains.
+* The NONE_SELECTED constant is not defined anywhere in the code, so it is unclear what value it represents.
+* The syntax in the else statement on line 17 is incorrect and may cause a syntax error.
+* The reserve.enable property is not a valid way to enable or disable an HTML element, so this code may not work as intended.
+* The checkout[book1] syntax is not valid JavaScript and may cause a syntax error.
+* The checkin.0, reserve.1, checkout.1, checkin.1, reserve.2, checkout.2, and checkin.2 variables are being assigned values based on STATUS_MAP.status, which is not a valid way to * * access an object property based on a dynamic variable. This may cause a syntax error or unexpected behavior.
+
+## issues i came accross myself
+* the abbreviated boolean statements make it hard to interpret by other people
+* checkin.0. doesnt make much sense since its not chaining to any other class/function in both the html and the js.
+* the consts arent properly labeled as variable to be recalled by the selector or other js properties
+* could i not just remove all the numbers and put them each in theri own relevant class path for book1-3 for easier access by ?
