@@ -57,7 +57,8 @@ console.log(holidays[futureId] || 'ID ${futureId} not created yet')
 
 let copied = holidays[christmas];
  copied = 'X-mas Day' ;
-copied.date = new Date(`25 December ${currentYear} 00:00`) ;
+copied.date = new Date('00:00') ; 
+// new Date function returning undefined for new time 
 console.log(copied.date)
 
 const isEarlier = copied.date < holidays[6].date
@@ -66,6 +67,7 @@ if (isEarlier) copied.date = correctDate
 console.log('ID change:', holidays[christmas].id != copied.id || copied.id)
 console.log('Name change:', holidays[christmas].name != copied.name || copied.name)
 console.log('Date change:', holidays[christmas].date != copied.date || copied.date)
+// holidays[christmas].date must not == copied.date OR copied.date , they both the same thing right?
 
 const firstHolidayTimestamp = Math.min(
     holidays[0].date.getTime,
@@ -96,8 +98,8 @@ const firstMonth = firstHolidayTimestamp.getMonth
 const lastDay = lastHolidayTimestamp.getDate
 const lastMonth = lastHolidayTimestamp.getMonth
 
-console.log('${firstDay}/${firstMonth}/${currentYear}')
-console.log('${lastDay}/${lastMonth}/${currentYear}')
+console.log(`${firstDay}/${firstMonth}/${currentYear}`)
+console.log(`${lastDay}/${lastMonth}/${currentYear}`)
 
 const randomHoliday = holidays[Math.random]
 console.log(randomHoliday.date)
