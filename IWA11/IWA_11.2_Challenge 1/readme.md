@@ -177,4 +177,7 @@ const 3-status: document(status)
 * what "topics" did the challenge cover
 
 ### answers to above questions
-* 
+* the order groupings were inputted as 1-root yet no root class existed in the 
+  original html, their was no querySelector or data-XXXX to retrieve any data form the html to the js file.
+  some sections were missing = signs and were structured like unfinished objects
+  1-class naming was returning js errors.
