@@ -181,3 +181,4 @@ const 3-status: document(status)
   original html, their was no querySelector or data-XXXX to retrieve any data form the html to the js file.
   some sections were missing = signs and were structured like unfinished objects
   1-class naming was returning js errors.
+  put the last 3 files in a object since they all share a parent class
