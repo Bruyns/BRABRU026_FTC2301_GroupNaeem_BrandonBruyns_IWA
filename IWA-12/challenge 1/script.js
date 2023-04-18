@@ -48,18 +48,18 @@ const book3 = {
 }
 
 
-book1.status = STATUS_MAP.status.color,
+book1.status.style = STATUS_MAP[shelf.color] ,
 book1.reserve = (STATUS_MAP.status.canReserve) ? 'enabled' : 'disabled'
-book1.checkout = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-book1.checkin = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+book1.checkout = (STATUS_MAP.status.canCheckout) ? 'enabled' : 'disabled'
+book1.checkin = (STATUS_MAP.status.canCheckIn) ? 'enabled' : 'disabled'
     
 
 book2.status = STATUS_MAP.status.color,
 book2.reserve = (STATUS_MAP.status.canReserve) ? 'enabled' : 'disabled'
 book2.checkout = (STATUS_MAP.status.canCheckout) ? 'enabled' : 'disabled'
-book2.checkin = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+book2.checkin = (STATUS_MAP.status.canCheckIn) ? 'enabled' : 'disabled'
 
 book3.status = STATUS_MAP.status.color,
 book3.reserve = (STATUS_MAP.status.canReserve) ? 'enabled' : 'disabled'
-book3.checkout = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-book3.checkin = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+book3.checkout = (STATUS_MAP.status.canCheckout) ? 'enabled' : 'disabled'
+book3.checkin = (STATUS_MAP.status.canCheckIn) ? 'enabled' : 'disabled'
