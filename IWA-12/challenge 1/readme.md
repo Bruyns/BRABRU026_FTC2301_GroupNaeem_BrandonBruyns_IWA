@@ -140,3 +140,34 @@ checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
 * checkin.0. doesnt make much sense since its not chaining to any other class/function in both the html and the js.
 * the consts arent properly labeled as variable to be recalled by the selector or other js properties
 * could i not just remove all the numbers and put them each in theri own relevant class path for book1-3 for easier access by ?
+
+## 1st atempt code
+* // checkin.0.color = none
+// status.0.style.color = STATUS_MAP.status.style.color = NONE_SELECTED
+// // reserve.0 = STATUS_MAP.status.canReserve ? 'enabled' : 'disabled'
+// if (STATUS_MAP.status.canReserve === true){
+//     reserve.enable = true
+// }else (){
+//     reserve.enable = false
+// }
+// checkout[book1] = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+// checkin.0 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+
+// book1.status.style.color = (none){
+// status : STATUS_MAP.color,
+// reserve : STATUS_MAP.canReserver ? 'enabled' : 'disabled',
+// checkout : STATUS_MAP.canCheckout ? 'enabled' : 'disabled',
+// checkin : STATUS_MAP.canCheckIn ? 'enabled' : 'disabled',
+// }
+
+// checkin.1.color = none
+// status.1.style.color = STATUS_MAP.status.color
+// reserve.1 = STATUS_MAP.status.canReserve ? 'enabled' : 'disabled'
+// checkout.1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+// checkin.1 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+
+// checkin.2.color = none
+// status.2.style.color = STATUS_MAP.status.color
+// reserve.2 = STATUS_MAP.status.canReserve ? 'enabled' : 'disabled'
+// checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+// checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'

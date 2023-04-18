@@ -26,48 +26,40 @@ const STATUS_MAP = {
 }
 
 // Edit below line 
-
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
-
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
-
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
-
-// checkin.0.color = none
-// status.0.style.color = STATUS_MAP.status.style.color = NONE_SELECTED
-// // reserve.0 = STATUS_MAP.status.canReserve ? 'enabled' : 'disabled'
-// if (STATUS_MAP.status.canReserve === true){
-//     reserve.enable = true
-// }else (){
-//     reserve.enable = false
-// }
-// checkout[book1] = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-// checkin.0 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
-
-book1.status.style.color = (none){
-status : STATUS_MAP.color,
-reserve : STATUS_MAP.canReserver ? 'enabled' : 'disabled',
-checkout : STATUS_MAP.canCheckout ? 'enabled' : 'disabled',
-checkin : STATUS_MAP.canCheckIn ? 'enabled' : 'disabled',
+const book1 = {
+status : document.getElementById("#book1"),
+reserve : document.querySelector(".reserve"),
+checkout : document.querySelector(".checkout"),
+checkin : document.querySelector(".checkin"),
 }
 
-checkin.1.color = none
-status.1.style.color = STATUS_MAP.status.color
-reserve.1 = STATUS_MAP.status.canReserve ? 'enabled' : 'disabled'
-checkout.1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.1 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+const book2 = {
+    status : document.getElementById("#book2"),
+    reserve : document.querySelector(".reserve"),
+    checkout : document.querySelector(".checkout"),
+    checkin : document.querySelector(".checkin"),
+    }
 
-checkin.2.color = none
-status.2.style.color = STATUS_MAP.status.color
-reserve.2 = STATUS_MAP.status.canReserve ? 'enabled' : 'disabled'
-checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+const book3 = {
+    status : document.getElementById("#book3"),
+    reserve : document.querySelector(".reserve"),
+    checkout : document.querySelector(".checkout"),
+    checkin : document.querySelector(".checkin"),
+}
+
+
+book1.status = STATUS_MAP.status.color,
+book1.reserve = (STATUS_MAP.status.canReserve) ? 'enabled' : 'disabled'
+book1.checkout = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+book1.checkin = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+    
+
+book2.status = STATUS_MAP.status.color,
+book2.reserve = (STATUS_MAP.status.canReserve) ? 'enabled' : 'disabled'
+book2.checkout = (STATUS_MAP.status.canCheckout) ? 'enabled' : 'disabled'
+book2.checkin = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+
+book3.status = STATUS_MAP.status.color,
+book3.reserve = (STATUS_MAP.status.canReserve) ? 'enabled' : 'disabled'
+book3.checkout = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+book3.checkin = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
