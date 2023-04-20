@@ -171,3 +171,8 @@ checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
 // reserve.2 = STATUS_MAP.status.canReserve ? 'enabled' : 'disabled'
 // checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
 // checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+
+## resources from the LMS
+### style object
+* [styles and classes] https://javascript.info/styles-and-classes
+* [HTMLElements.style] https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style

@@ -182,3 +182,11 @@ const 3-status: document(status)
   some sections were missing = signs and were structured like unfinished objects
   1-class naming was returning js errors.
   put the last 3 files in a object since they all share a parent class
+
+  ## resources from the LMS
+  ### Document Object Module (DOM)
+  * [understanding the DOM - document object module] https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model
+  * [what is the DOM? the document object module explained in plain english] https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model
+  ### Attributes and Properties
+  * [attributes and properties] https://javascript.info/dom-attributes-and-properties
+  * [knowledge: attributes and properties] https://open-wc.org/guides/knowledge/attributes-and-properties/

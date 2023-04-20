@@ -97,3 +97,8 @@ result.push(extractBiggest())
 
 console.log(result)
 ```
+
+## resource links from LMS
+* [arrays][MDN] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+* [JavaScript Array Tutorial- Array methods in JS] https://www.freecodecamp.org/news/javascript-array-tutorial-array-methods-in-js/
+* [How to declare an Array in JavaScript - creating an array in JS] https://www.freecodecamp.org/news/how-to-declare-an-array-in-javascript-creating-an-array-in-js/

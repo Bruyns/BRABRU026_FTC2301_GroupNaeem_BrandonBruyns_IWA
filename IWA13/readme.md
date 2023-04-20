@@ -76,3 +76,6 @@ calcUser()
 checkUser()
 calcUser()
 ```
+
+## resource links from LMS
+* [MDN] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions

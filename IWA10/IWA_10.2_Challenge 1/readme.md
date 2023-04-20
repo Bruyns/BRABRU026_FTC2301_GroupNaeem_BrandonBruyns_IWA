@@ -190,3 +190,7 @@ console.log( holiday.name.futureId)
 ``` 
 where futureId was not nested in the object and was returning undefined. i removed name since we want it to check futureId first then if it wasnt in the object return a string message
 * setting the new name for 'christmas' to 'x-mas' using copied. is copied a class/ function?
+
+  ## resources from the LMS
+  ### built in objects
+  * [standard built-in objects] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
