@@ -78,3 +78,6 @@ const example2 = {
 example1.calculate()
 example2.calculate()
 ```
+
+## what is wrong with the code
+* it is using function declaration and "this" functions 

@@ -1,12 +1,19 @@
 
-function add() { a, b => { a + b }}
+function add(a, b)  { 
+	return  a + b; 
+}
 
-function multiply = a, b => { a - b }
+function multiply(a, b) { 
+	return  a * b;
+}
+console.log(multiply)
 
 function internal() {
-	const added = this.add(this.a, this.b)
-	this.multiply(this.a, this.b)
-	return this
+	// this.add = this.add(this.a, this.b)
+	// multiply.call(this.example1, this.example2)
+	// return this
+	add(example1.a,example1.b)
+	multiply()
 }
 
 // Not allowed to change below this
@@ -35,3 +42,9 @@ const example2 = {
 
 example1.calculate()
 example2.calculate()
+
+
+console.log(add)
+console.log(multiply)
+console.log(internal)
+console.log(add(a, b), multiply(a, b), internal())
