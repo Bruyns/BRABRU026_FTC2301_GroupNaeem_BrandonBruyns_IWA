@@ -16,28 +16,31 @@ console.log(second[second.length - 1])
 console.log(third[third.length - 1])
 
 const extractBiggest = (data) => {
-	if ([first.length - 1] > [second.length - 1] && [third.length - 1]) {
+if (first[first.length - 1] > second[second.length - 1] ) {
 		// first.pop(first.length - 1)
-		return first[first.length - 1]	
-		first.pop(first.length - 1)
+		return first.pop()	
+		
 	}
-	else if ([second.length - 1] > [third.length - 1] && [first.length - 1]) {
+	else if (second[second.length - 1] > third[third.length - 1] ) {
 		// second.pop(second.length - 1)
-		return second[second.length - 1]
-		second.pop(second.length - 1)
+		return second.pop()
+		
+	}else {
+		return third.pop()
 	}
-	else if ([third.length - 1] > [first.length - 1] && [second.length - 1]) {
-		// third.pop(third.length - 1)
-		return third[third.length - 1]
-		third.pop(third.length - 1)
-    }
+
+
+// 	else if (third.length - 1 > first.length - 1 && second.length - 1) {
+// 		// third.pop(third.length - 1)
+// 		return third.pop()
+//     }
 }
 const result = []
 
-console.log(first)
-console.log(second)
-console.log(third)
-console.log(extractBiggest(),extractBiggest(),extractBiggest(),extractBiggest())
+// console.log(first)
+// console.log(second)
+// console.log(third)
+// console.log(extractBiggest(),extractBiggest(),extractBiggest(),extractBiggest())
 
 
 // Only edit above
