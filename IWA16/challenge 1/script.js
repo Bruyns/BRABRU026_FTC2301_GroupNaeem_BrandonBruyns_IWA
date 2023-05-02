@@ -66,46 +66,60 @@ const MONTHS = [
   // Only edit below this comment
   
   const createHtml = (athlete) => {
-    firstName, surname, id, races = athlete
-    [date], [time] = races.reverse()
+    const {firstName, surname, id, races} = data.response.data[athlete]
+    const {date, time} = races[races.length - 1]
+    // const {date, time} = races.reverse()
+    // [date], [time] = races.reverse()
+    // can reverse if you want to find the last value 1st(would show up as 1st [0]) in the array easier.
   
     const fragment = document.createDocumentFragment();
   
-    const title = document.createElement(h2);
-    title = response.data.id;
+    const title = document.createElement("h2");
+    title.textContent = `${id}`;
     fragment.appendChild(title);
   
-    const list = document.createElement(dl);
+    const list = document.createElement("dl");
   
-    const day = date.getDate();
-    const month = MONTHS[date.month];
-    const year = date.year;
-    const trueDate = day + month + year
-    console.log(date.getDate)
+    const eventDate = new Date(date);
+    const day = eventDate.getDate()
+    const month = MONTHS[eventDate.getMonth()];
+    const year = eventDate.getFullYear();
+    // console.log(eventDate)
   
-    first, second, third, fourth = timeAsArray;
-    total = first + second + third + fourth;
+   const [first, second, third, fourth] = time;
+   const total = first + second + third + fourth;
+    // const total = 81;
   
-    const hours = total / 60;
-    const minutes = total / hours / 60;
+    const hours = Math.floor(total / 60);     //math.floor what does it do
+    const minutes = (total % 60)
+    // console.log(minutes);        //used modulus to give me? remainder of minutes in seconds
   
     list.innerHTML = /* html */ `
       <dt>Athlete</dt>
-      <dd>${firstName, surname}</dd>
+      <dd>${firstName} ${surname}</dd>
   
       <dt>Total Races</dt>
-      <dd>${races}</dd>
+      <dd>${races.length}</dd>
   
       <dt>Event Date (Latest)</dt>
-      <dd>${day, month, year}</dd>
+      <dd>${day} ${month} ${year}</dd>
   
       <dt>Total Time (Latest)</dt>
-      <dd>${hours.padStart(2, 0), minutes}</dd>
+      <dd>${hours}:${minutes}</dd>
     `;
   
     fragment.appendChild(list);
+    return fragment
   }
   
-  [NM372], [SV782] = data
-  document.querySelector(NM372).appendChild(createHtml(NM372));
-  document.querySelector(SV782).appendChild(createHtml(SV782));
+  // [NM372], [SV782] = data
+
+  // return fragment
+  const NM372 = document.querySelector('[data-athlete="NM372"]');
+  const SV782 = document.querySelector('[data-athlete="SV782"]');
+  
+  NM372.appendChild(createHtml('NM372'));
+  SV782.appendChild(createHtml('SV782'));
+
+
+  
