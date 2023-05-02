@@ -71,8 +71,8 @@ const MONTHS = [
   
     const fragment = document.createDocumentFragment();
   
-    title = document.createElement(h2);
-    title= id;
+    const title = document.createElement(h2);
+    title = response.data.id;
     fragment.appendChild(title);
   
     const list = document.createElement(dl);
@@ -80,6 +80,8 @@ const MONTHS = [
     const day = date.getDate();
     const month = MONTHS[date.month];
     const year = date.year;
+    const trueDate = day + month + year
+    console.log(date.getDate)
   
     first, second, third, fourth = timeAsArray;
     total = first + second + third + fourth;
@@ -89,16 +91,16 @@ const MONTHS = [
   
     list.innerHTML = /* html */ `
       <dt>Athlete</dt>
-      <dd>${firstName surname}</dd>
+      <dd>${firstName, surname}</dd>
   
       <dt>Total Races</dt>
       <dd>${races}</dd>
   
       <dt>Event Date (Latest)</dt>
-      <dd>${day month year}</dd>
+      <dd>${day, month, year}</dd>
   
       <dt>Total Time (Latest)</dt>
-      <dd>${hours.padStart(2, 0) minutes}</dd>
+      <dd>${hours.padStart(2, 0), minutes}</dd>
     `;
   
     fragment.appendChild(list);
