@@ -66,8 +66,8 @@ const MONTHS = [
   // Only edit below this comment
   
   const createHtml = (athlete) => {
-    const {firstName, surname, id, races} = data.response.data[athlete]
-    const {date, time} = races[races.length - 1]
+    const {firstName, surname, id, races} = data.response.data[athlete];
+    const {date, time} = races[races.length - 1];
     // const {date, time} = races.reverse()
     // [date], [time] = races.reverse()
     // can reverse if you want to find the last value 1st(would show up as 1st [0]) in the array easier.
@@ -81,7 +81,7 @@ const MONTHS = [
     const list = document.createElement("dl");
   
     const eventDate = new Date(date);
-    const day = eventDate.getDate()
+    const day = eventDate.getDate();
     const month = MONTHS[eventDate.getMonth()];
     const year = eventDate.getFullYear();
     // console.log(eventDate)
@@ -90,7 +90,7 @@ const MONTHS = [
    const total = first + second + third + fourth;
     // const total = 81;
   
-    const hours = Math.floor(total / 60);     //math.floor what does it do
+    const hours = Math.floor(total / 60);     //math.floor what does it do, gives you lowest value
     const minutes = (total % 60)
     // console.log(minutes);        //used modulus to give me? remainder of minutes in seconds
   
@@ -122,4 +122,7 @@ const MONTHS = [
   SV782.appendChild(createHtml('SV782'));
 
 
-  
+  function B ()  {
+    console.log(a);
+    console.log(a)
+  }
